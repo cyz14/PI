@@ -56,9 +56,10 @@ static void destroy_reader_state(reader_state_t *state) {
   Word_t Rc_word;
 #pragma GCC diagnostic push
 #pragma GCC diagnostic warning "-Wsign-compare"
-  J1FA(Rc_word, state->allocated_ids);
-  J1FA(Rc_word, state->reserved_ids);
-  JSLFA(Rc_word, state->fields_bitwidth);
+//  J1FA(Rc_word, state->allocated_ids);
+  (void)state;
+  // J1FA(Rc_word, state->reserved_ids);
+  // JSLFA(Rc_word, state->fields_bitwidth);
 #pragma GCC diagnostic pop
   (void)Rc_word;
 }

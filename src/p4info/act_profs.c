@@ -29,7 +29,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_TABLES 8
+#define MAX_TABLES 9
 
 typedef struct _act_prof_data_s {
   p4info_common_t common;
